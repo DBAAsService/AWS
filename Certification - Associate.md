@@ -75,33 +75,33 @@ READ THE FAQ OF S3 BEFORE THE EXAM
 
 # EC2
 
-*. On Demand
-*. Reserved
-*. Spot 
-*. Dedicated hosts 
+* On Demand
+* Reserved
+* Spot 
+* Dedicated hosts 
 
 
 Security groups
-*. Stateful - Any change to the outbound rule will not impact the inbount rune
+* Stateful - Any change to the outbound rule will not impact the inbount rune
 
 NACL - stateless (need to create inbound/outbound rules explicitly)
 
-*. Cann't block any ip address for any port opening
+* Cann't block any ip address for any port opening
 
-*. All inbound traffics are blocked by default 
+* All inbound traffics are blocked by default 
 
-*. All outbound traffics are allowed by default 
+*  All outbound traffics are allowed by default 
 
-*. instance can have multiple security group
+* instance can have multiple security group
 
 
 ## EBS
 
-*. General purpose ssd ( For general purpose) gp2 16000 ops - gp2
-*. Provisioned iops ssd ( For databases)  -io1 64000 ops - io1
-*. Throughput optimized (HDD) 500 ops ( data warehouse)- st1
-*. Cold HDD. - 250 ops ( low cose ) (For file servers) - sc1
-*. Standard (HDD) 40-200 ops 
+* General purpose ssd ( For general purpose) gp2 16000 ops - gp2
+* Provisioned iops ssd ( For databases)  -io1 64000 ops - io1
+* Throughput optimized (HDD) 500 ops ( data warehouse)- st1
+* Cold HDD. - 250 ops ( low cose ) (For file servers) - sc1
+* Standard (HDD) 40-200 ops 
 
 
 EBS volumes should be in the same AZ as the EC2 instance
@@ -234,13 +234,13 @@ ELB will not have ipv4 address.
 ## Routing techniques
 
 
-*. Simple routing - Picks the IP address in random order - No health check
-*. Weighted routing - Provides weight to each ip address allocation 
-*. Latency-based routing - Route to lowes network latency 
-*. Failover routing   - Active/Passive based on the health check monitoring
-*. Geolocation routing - Routes based on the location of the request initiation 
-*. Geoproximity rouing - Available only in the traffic flow only . Routes based on the geolocation of request and resources along with bias
-*. Multivalue routing - Same as simple routing with additional healthcheck for each records 
+* Simple routing - Picks the IP address in random order - No health check
+* Weighted routing - Provides weight to each ip address allocation 
+* Latency-based routing - Route to lowes network latency 
+* Failover routing   - Active/Passive based on the health check monitoring
+* Geolocation routing - Routes based on the location of the request initiation 
+* Geoproximity rouing - Available only in the traffic flow only . Routes based on the geolocation of request and resources along with bias
+* Multivalue routing - Same as simple routing with additional healthcheck for each records 
 
 Healthcheck - Healthchecks can be created to monitor the application and route53 will disable if the health check fails
 
@@ -311,13 +311,13 @@ SWF - Simple workflow
 ## Kinesis streams (Stores the data for 24 hours)
 
 Similar to sparc streaming data analysis
-*.consists of shards
-*. Stores the data for 24 hours
+* consists of shards
+* Stores the data for 24 hours
 
 Kinesis firehose (online data analysis - no data storage)
 
 Analysis can be done by lambda functions
-*. No data storage
+* No data storage
 
 Kinesis analysitics
 used by streams/firehose for analysis 
