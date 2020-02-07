@@ -288,7 +288,16 @@ Flow log requires the following
   CLoudwatch log group or S3 bucket
   IAM rule 
 
+Some traffics are not monitored in the VPC flow logs
+
+- DNS traffic 
+- Windows license
+- DHCP traffic
+- Traffic to reserved hosts 
+- DHCP traffic 
+
 Bastion hosts or jumpbox 
+NAT host can't be a bastion host 
 
 Direct connect is a common place / data center where it has connectivity to both AWS and to the client datacenter
 Similar to edge location where it is connected to AWS region through dedicated network (backbone network)
