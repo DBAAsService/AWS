@@ -73,7 +73,7 @@ Snowmobile - exabyte transfer 100 PB
 READ THE FAQ OF S3 BEFORE THE EXAM
 
 
-#EC2
+# EC2
 
 *. On Demand
 *. Reserved
@@ -95,7 +95,7 @@ NACL - stateless (need to create inbound/outbound rules explicitly)
 *. instance can have multiple security group
 
 
-##EBS
+## EBS
 
 *. General purpose ssd ( For general purpose) gp2 16000 ops - gp2
 *. Provisioned iops ssd ( For databases)  -io1 64000 ops - io1
@@ -119,7 +119,6 @@ Its better to stop the instance before taking the snapshot of the root volume
 EBS volume type and size can be changed on the fly
 
 To move the volume across the regions
-===
 - Create a snapshot
 - Create an image out of the snapshot
 - Copy the image to different region
@@ -213,7 +212,7 @@ Aurora
   The read replicas can be promoted to convert the mysql to aurora cluster 
 
 
-#Route53
+# Route53
 
 
 NS = name server
@@ -232,7 +231,7 @@ Cname can't be used for naked domain name (zone apex record) (http://myraj.com)
 
 ELB will not have ipv4 address.
 
-##Routing techniques
+## Routing techniques
 
 
 *. Simple routing - Picks the IP address in random order - No health check
@@ -294,7 +293,7 @@ Bastion hosts or jumpbox
 Direct connect is a common place / data center where it has connectivity to both AWS and to the client datacenter
 Similar to edge location where it is connected to AWS region through dedicated network (backbone network)
 
-##VPC Gateway
+## VPC Gateway
 
 
 VPC endpoint (To connect to AWS services without going outside)
@@ -309,8 +308,8 @@ SQS - Simple queue service (pull)
 SWF - Simple workflow 
 
 
-Kinesis streams (Stores the data for 24 hours)
-========
+## Kinesis streams (Stores the data for 24 hours)
+
 Similar to sparc streaming data analysis
 *.consists of shards
 *. Stores the data for 24 hours
